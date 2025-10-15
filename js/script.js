@@ -7,4 +7,13 @@ function setHeroHeight() {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
   let headerHeight = header.offsetHeight;
-  document.documentElement.style.setProperty('--header-height', `${
+  document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+}
+
+window.addEventListener('resize', setHeroHeight);
+window.addEventListener('load', setHeroHeight);
+
+// Collapsible menu toggle
+toggleBtn.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
