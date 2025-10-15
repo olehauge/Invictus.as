@@ -29,7 +29,7 @@ nav ul li a { color:white; text-decoration:none; font-weight:bold; }
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url('olehauge/Invictus.as/images/hero.png') center/cover no-repeat;
+  background: url('.../images/hero.png') center/cover no-repeat;
   padding: 2vw;
   color: white;
 }
