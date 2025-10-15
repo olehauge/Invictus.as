@@ -24,8 +24,8 @@ nav ul li a { color:white; text-decoration:none; font-weight:bold; }
 
 /* Hero */
 .hero {
-  height: 100vh;         /* Full viewport height */
-  width: 100%;           /* Full width */
+  height: calc(100vh - 60px); /* fallback static subtraction */
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +37,7 @@ nav ul li a { color:white; text-decoration:none; font-weight:bold; }
 }
 
 .hero-content {
-  background: rgba(0, 0, 0, 0.4); /* dark overlay for text */
+  background: rgba(0, 0, 0, 0.4);
   padding: 2vw;
   border-radius: 1vw;
 }
@@ -67,12 +67,11 @@ footer { background-color:#333; color:white; text-align:center; padding:2vw; fon
   nav ul { display:none; flex-direction: column; width:100%; background-color:#0a74da; }
   nav ul li { text-align:center; padding:1rem 0; }
   .menu-toggle { display:block; }
-  .hero { height: 60vh; padding:4vw; }
-  .hero-content { font-size:4vw; }
+  .hero { height: calc(100vh - 80px); padding:4vw; }
 }
 
 @media (max-width: 480px) {
-  .hero { height: 50vh; padding:6vw; }
+  .hero { height: calc(100vh - 100px); padding:6vw; }
   .hero-content { font-size:5vw; }
   .section h2 { font-size:5vw; }
   .section p { font-size:3.5vw; }

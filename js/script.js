@@ -1,6 +1,12 @@
-const toggleButton = document.getElementById('menu-toggle');
-const navMenu = document.getElementById('nav-menu');
+// Dynamically adjust hero height based on actual header height
+const header = document.getElementById('site-header');
+const hero = document.querySelector('.hero');
 
-toggleButton.addEventListener('click', () => {
-  navMenu.querySelector('ul').classList.toggle('active');
-});
+function adjustHeroHeight() {
+  const headerHeight = header.offsetHeight;
+  hero.style.height = `calc(100vh - ${headerHeight}px)`;
+}
+
+// Adjust on load and resize
+window.addEventListener('load', adjustHeroHeight);
+window.addEventListener('resize', adjustHeroHeight);
