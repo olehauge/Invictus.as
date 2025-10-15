@@ -7,6 +7,5 @@ function adjustHeroHeight() {
   hero.style.height = `calc(100vh - ${headerHeight}px)`;
 }
 
-// Adjust on load and resize
 window.addEventListener('load', adjustHeroHeight);
 window.addEventListener('resize', adjustHeroHeight);
