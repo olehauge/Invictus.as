@@ -29,18 +29,24 @@ nav ul li a { color:white; text-decoration:none; font-weight:bold; }
 .menu-toggle { display:none; font-size:1.5rem; background:none; border:none; color:white; cursor:pointer; }
 
 /* Hero */
-.hero { position: relative; text-align:center; }
-.hero-img { width:100%; height:auto; display:block; }
-.hero-content {
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 60vh; /* scales with viewport */
+  background: url('../images/hero.jpg') center/cover no-repeat;
+  padding: 2vw;
   color: white;
-  background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.4);
   padding: 2vw;
   border-radius: 1vw;
 }
+
 
 /* Sections */
 .section { padding: 4vw 2vw; text-align: center; }
