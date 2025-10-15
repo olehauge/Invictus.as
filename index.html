@@ -5,106 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Invictus Treningssenter</title>
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-
-  <!-- Header -->
-  <header id="site-header">
-    <div class="logo-container">
-      <img src="images/logo.png" alt="Invictus Logo" class="logo">
-      <button class="menu-toggle" id="menu-toggle">☰</button>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Invictus Treningssenter Logo">
     </div>
-    <nav id="nav-menu">
+    <nav>
       <ul>
         <li><a href="#hero">Hjem</a></li>
-        <li><a href="#facilities">Fasiliteter</a></li>
-        <li><a href="#timeplan">Timeplan</a></li>
+        <li><a href="#services">Fasiliteter</a></li>
+        <li><a href="#schedule">Timeplan</a></li>
         <li><a href="#testimonials">Erfaringer</a></li>
         <li><a href="#contact">Kontakt</a></li>
       </ul>
     </nav>
+    <button id="menu-toggle" class="menu-toggle">☰</button>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <img src="images/hero.png" alt="Gym Hero" class="hero-img">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Tren smartere, lev bedre</h1>
-      <p>Invictus Treningssenter – kvalitet, fellesskap og resultater for voksne 30–50 år</p>
-      <div class="hero-buttons">
-        <a href="bli-medlem.html" class="btn primary-btn">Bli medlem i dag</a>
-        <a href="#timeplan" class="btn secondary-btn">Se Timeplan</a>
+  <main>
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Tren smartere, lev bedre</h1>
+        <p>Invictus Treningssenter – kvalitet, fellesskap og resultater for voksne 30–50 år</p>
+        <div class="cta-buttons">
+          <a href="#membership" class="btn primary-btn">Bli medlem i dag</a>
+          <a href="#schedule" class="btn secondary-btn">Se Timeplan</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Hva vi tilbyr -->
-  <section id="facilities" class="section facilities">
-    <h2>Hva vi tilbyr</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="images/icon1.png" alt="Moderne utstyr">
-        <h3>Moderne utstyr</h3>
-        <p>Alt du trenger for effektiv trening og progresjon.</p>
+    <section id="services">
+      <h2>Hva vi tilbyr</h2>
+      <div class="service-cards">
+        <!-- Service Cards Here -->
       </div>
-      <div class="card">
-        <img src="images/icon2.png" alt="Personlig trener">
-        <h3>Personlig trener</h3>
-        <p>Skreddersydde planer som gir resultater.</p>
-      </div>
-      <div class="card">
-        <img src="images/icon3.png" alt="Gruppetimer">
-        <h3>Gruppetimer</h3>
-        <p>70+ timer i uken – Les Mills, Corebar og mer.</p>
-      </div>
-      <div class="card">
-        <img src="images/icon4.png" alt="Fleksible medlemskap">
-        <h3>Fleksible medlemskap</h3>
-        <p>Velg det som passer din hverdag best.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Timeplan Section -->
-  <section id="timeplan" class="section timeplan">
-    <h2>Timeplan</h2>
-    <p>Planlegg treningen din enkelt med våre interaktive kort.</p>
-    <div class="timeplan-cards">
-      <div class="time-card">Yoga – 08:00</div>
-      <div class="time-card">Les Mills – 09:00</div>
-      <div class="time-card">Sykkel – 10:00</div>
-      <div class="time-card">Corebar – 11:00</div>
-    </div>
-    <a href="timeplan.html" class="btn primary-btn">Se full timeplan</a>
-  </section>
+    <section id="schedule">
+      <h2>Timeplan</h2>
+      <p>Planlegg treningen din enkelt med våre interaktive kort.</p>
+      <div class="schedule-cards">
+        <!-- Schedule Cards Here -->
+      </div>
+    </section>
 
-  <!-- Testimonials -->
-  <section id="testimonials" class="section testimonials">
-    <h2>Våre medlemmer sier</h2>
-    <div class="testimonial-cards">
-      <div class="testimonial">
-        <p>"Fantastisk miljø og resultater! Anbefales på det varmeste."</p>
-        <span>- Katrine, 42 år</span>
+    <section id="testimonials">
+      <h2>Våre medlemmer sier</h2>
+      <div class="testimonial-cards">
+        <!-- Testimonials Here -->
       </div>
-      <div class="testimonial">
-        <p>"Personlig trener hjalp meg å nå mål jeg aldri trodde jeg kunne."</p>
-        <span>- Thomas, 35 år</span>
-      </div>
-      <div class="testimonial">
-        <p>"Timeplanen er superenkel å bruke, og gruppetimene er motiverende."</p>
-        <span>- Lene, 47 år</span>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Footer / CTA -->
   <footer id="contact">
-    <a href="bli-medlem.html" class="btn primary-btn footer-btn">Bli medlem nå</a>
+    <a href="#membership" class="btn primary-btn">Bli medlem nå</a>
     <p>© 2025 Invictus Treningssenter</p>
     <p>Adresse, Åpningstider, Sosiale medier</p>
   </footer>
-
-  <script src="js/script.js"></script>
 </body>
 </html>
