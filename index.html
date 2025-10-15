@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
   <title>Invictus Treningssenter</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -16,52 +16,49 @@
     </div>
     <nav id="nav-menu">
       <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="fasiliteter.html">Fasiliteter</a></li>
-        <li><a href="bli-medlem.html">Bli medlem</a></li>
-        <li><a href="timeplan.html">Timeplan</a></li>
-        <li><a href="personlig-trener.html">Personlig trener</a></li>
-        <li><a href="apningstider.html">Åpningstider</a></li>
-        <li><a href="om-oss.html">Om oss</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-        <li><a href="bilder.html">Bilder</a></li>
+        <li><a href="#hero">Hjem</a></li>
+        <li><a href="#facilities">Fasiliteter</a></li>
+        <li><a href="#timeplan">Timeplan</a></li>
+        <li><a href="#contact">Kontakt</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <img src="images/hero.png" alt="Hero Image" class="hero-img">
+  <section id="hero" class="hero">
+    <img src="images/hero.png" alt="Gym Hero" class="hero-img">
     <div class="hero-content">
-      <h1>Velkommen til Invictus Treningssenter!</h1>
-      <p>Kvalitet og service i fokus.</p>
-      <a href="bli-medlem.html" class="btn">Bli medlem i dag</a>
+      <h1>Velkommen til Invictus Treningssenter</h1>
+      <p>Kvalitet, trening og fellesskap for deg</p>
+      <div class="hero-buttons">
+        <a href="bli-medlem.html" class="btn primary-btn">Bli medlem i dag</a>
+        <a href="#timeplan" class="btn secondary-btn">Se Timeplan</a>
+      </div>
     </div>
   </section>
 
-
-  <!-- Example Sections -->
-  <section class="section facilities">
-    <h2>Fasiliteter</h2>
-    <p>Vårt treningssenter tilbyr topp moderne utstyr og fasiliteter for alle nivåer.</p>
-    <a href="fasiliteter.html" class="btn">Se mer</a>
+  <!-- Facilities -->
+  <section id="facilities" class="section facilities">
+    <h2>Hva vi tilbyr</h2>
+    <div class="cards">
+      <div class="card"><h3>Moderne utstyr</h3><p>Alt du trenger for effektiv trening.</p></div>
+      <div class="card"><h3>Personlig trener</h3><p>Skreddersydd trening for deg.</p></div>
+      <div class="card"><h3>Gruppetimer</h3><p>Over 70 timer i uken – Les Mills, Corebar og mer.</p></div>
+      <div class="card"><h3>Fleksible medlemskap</h3><p>Velg det som passer din hverdag best.</p></div>
+    </div>
   </section>
 
-  <section class="section trainers">
-    <h2>Personlige Trenere</h2>
-    <p>Våre sertifiserte trenere hjelper deg å nå dine mål, uansett nivå.</p>
-    <a href="personlig-trener.html" class="btn">Les mer</a>
-  </section>
-
-  <section class="section timeplan">
+  <!-- Timeplan Preview -->
+  <section id="timeplan" class="section timeplan">
     <h2>Timeplan</h2>
-    <p>Velg blant nesten 70 gruppetimer, inkludert Les Mills, Corebar, sykkel og mer.</p>
-    <a href="timeplan.html" class="btn">Åpne timeplan</a>
+    <p>Planlegg treningen din enkelt. Klikk for full oversikt.</p>
+    <a href="timeplan.html" class="btn primary-btn">Se full timeplan</a>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Invictus Treningssenter - Utviklet og driftes av <a href="https://www.webcraft.no">WebCraft AS</a></p>
+  <!-- Contact / Footer -->
+  <footer id="contact">
+    <p>© 2025 Invictus Treningssenter</p>
+    <p>Adresse, Åpningstider, Sosiale medier</p>
   </footer>
 
   <script src="js/script.js"></script>
