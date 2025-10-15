@@ -8,13 +8,13 @@ function setHeroHeight() {
   document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
 }
 
-window.addEventListener('load', setHeroHeight);
 window.addEventListener('resize', setHeroHeight);
+window.addEventListener('load', setHeroHeight);
 
-// Mobile menu toggle
-const menuToggle = document.getElementById('menu-toggle');
+// Menu toggle for mobile
+const toggleBtn = document.getElementById('menu-toggle');
 const navMenu = document.getElementById('nav-menu');
 
-menuToggle.addEventListener('click', () => {
-  navMenu.querySelector('ul').classList.toggle('open');
+toggleBtn.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
 });
