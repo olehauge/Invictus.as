@@ -24,16 +24,16 @@ nav ul li a { color:white; text-decoration:none; font-weight:bold; }
 
 /* Hero */
 .hero {
-  position: relative;
+  height: 100vh; /* full viewport height */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 60vh; /* scales with viewport */
   background: url('../images/hero.jpg') center/cover no-repeat;
   padding: 2vw;
   color: white;
 }
+
 
 .hero-content {
   background: rgba(0, 0, 0, 0.4);
