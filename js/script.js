@@ -1,2 +1,6 @@
-// Placeholder for any interactive scripts (menu toggle, sliders, etc.)
-console.log("Invictus template loaded");
+const toggleButton = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+toggleButton.addEventListener('click', () => {
+  navMenu.querySelector('ul').classList.toggle('active');
+});

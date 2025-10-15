@@ -9,8 +9,11 @@
 <body>
   <!-- Header -->
   <header>
-    <img src="images/logo.png" alt="Invictus Logo" class="logo">
-    <nav>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Invictus Logo" class="logo">
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </div>
+    <nav id="nav-menu">
       <ul>
         <li><a href="index.html">Hjem</a></li>
         <li><a href="fasiliteter.html">Fasiliteter</a></li>
@@ -27,15 +30,32 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Velkommen til Invictus Treningssenter!</h1>
-    <p>Kvalitet og service i fokus.</p>
-    <a href="bli-medlem.html" class="btn">Bli medlem i dag</a>
+    <img src="images/hero.jpg" alt="Gym Hero Image" class="hero-img">
+    <div class="hero-content">
+      <h1>Velkommen til Invictus Treningssenter!</h1>
+      <p>Kvalitet og service i fokus.</p>
+      <a href="bli-medlem.html" class="btn">Bli medlem i dag</a>
+    </div>
   </section>
 
-  <!-- Timeplan Section -->
-  <section class="timeplan">
-    <h2>Oversikt over gruppetimer</h2>
-    <p>Nesten 70 gruppetimer å velge mellom, inkludert Les Mills konsepter, Corebar, sykkel og mer.</p>
+  <!-- Sections -->
+  <section class="section facilities">
+    <h2>Fasiliteter</h2>
+    <img src="images/facilities.jpg" alt="Facilities" class="section-img">
+    <p>Vårt treningssenter tilbyr topp moderne utstyr og fasiliteter for alle nivåer.</p>
+    <a href="fasiliteter.html" class="btn">Se mer</a>
+  </section>
+
+  <section class="section trainers">
+    <h2>Personlige Trenere</h2>
+    <img src="images/trainer.jpg" alt="Trainer" class="section-img">
+    <p>Våre sertifiserte trenere hjelper deg å nå dine mål, uansett nivå.</p>
+    <a href="personlig-trener.html" class="btn">Les mer</a>
+  </section>
+
+  <section class="section timeplan">
+    <h2>Timeplan</h2>
+    <p>Velg blant nesten 70 gruppetimer, inkludert Les Mills, Corebar, sykkel og mer.</p>
     <a href="timeplan.html" class="btn">Åpne timeplan</a>
   </section>
 
@@ -43,5 +63,7 @@
   <footer>
     <p>© 2025 Invictus Treningssenter - Utviklet og driftes av <a href="https://www.webcraft.no">WebCraft AS</a></p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
