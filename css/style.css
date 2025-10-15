@@ -16,13 +16,7 @@ header {
 .logo-container { display:flex; align-items:center; gap:1rem; }
 .logo { height:50px; max-width:40%; }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
+nav ul { display:flex; list-style:none; gap:1rem; flex-wrap: wrap; }
 nav ul li a { color:white; text-decoration:none; font-weight:bold; }
 
 /* Mobile Toggle */
@@ -47,7 +41,6 @@ nav ul li a { color:white; text-decoration:none; font-weight:bold; }
   border-radius: 1vw;
 }
 
-
 /* Sections */
 .section { padding: 4vw 2vw; text-align: center; }
 .section h2 { margin-bottom: 1vw; font-size: 2vw; }
@@ -69,11 +62,13 @@ footer { background-color:#333; color:white; text-align:center; padding:2vw; fon
   nav ul { display:none; flex-direction: column; width:100%; background-color:#0a74da; }
   nav ul li { text-align:center; padding:1rem 0; }
   .menu-toggle { display:block; }
-  .hero-content { padding:5vw; font-size:4vw; }
+  .hero { min-height: 50vh; padding:4vw; }
+  .hero-content { font-size:4vw; }
 }
 
 @media (max-width: 480px) {
-  .hero-content { font-size:5vw; padding:6vw; }
+  .hero { min-height: 40vh; padding:6vw; }
+  .hero-content { font-size:5vw; }
   .section h2 { font-size:5vw; }
   .section p { font-size:3.5vw; }
   .btn { font-size:3.5vw; padding:4vw 6vw; }
